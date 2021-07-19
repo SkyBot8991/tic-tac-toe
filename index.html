@@ -11,33 +11,39 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <body>
-        <h1 class="main-heading">Tic-Tac-Toe</h1>
-        <h3 class="sub-heading">Player 1's Turn</h2>
-        <div class="scores">
-            <span class="player-1-score">X - 0</span>
-            <span class="player-2-score">O - 0</span>
+        <div class="content-wrapper">
+            <div class="content">
+                <h1 class="main-heading">Tic-Tac-Toe</h1>
+                <h3 class="sub-heading">Player 1's Turn</h2>
+                <div class="scores">
+                    <span class="player-1-score">X - 0</span>
+                    <span class="player-2-score">O - 0</span>
+                </div>
+                <div class="board-wrapper">
+                    <div class="board">
+                        <div class="grid-item grid-1"></div>
+                        <div class="grid-item grid-2"></div>
+                        <div class="grid-item grid-3"></div>
+                        <div class="grid-item grid-4"></div>
+                        <div class="grid-item grid-5"></div>
+                        <div class="grid-item grid-6"></div>
+                        <div class="grid-item grid-7"></div>
+                        <div class="grid-item grid-8"></div>
+                        <div class="grid-item grid-9"></div>
+                    </div>
+                </div>
+                <form class="mode-selector">
+                    <span class="normal-select">
+                        <input id="normal-checkbox" type="radio" name="checkbox" value="normal-checkbox">
+                        <label for="normal-checkbox">Normal Mode</label>
+                    </span>
+                    <span class="ai-select">
+                        <input id="ai-checkbox" type="radio" name="checkbox" value="ai-checkbox" checked>
+                        <label for="ai-checkbox">AI Mode</label>
+                    </span>
+                </form>
+            </div>
         </div>
-        <div class="board">
-            <div class="grid-item grid-1"></div>
-            <div class="grid-item grid-2"></div>
-            <div class="grid-item grid-3"></div>
-            <div class="grid-item grid-4"></div>
-            <div class="grid-item grid-5"></div>
-            <div class="grid-item grid-6"></div>
-            <div class="grid-item grid-7"></div>
-            <div class="grid-item grid-8"></div>
-            <div class="grid-item grid-9"></div>
-        </div>
-        <form class="mode-selector">
-            <span class="normal-select">
-                <input id="normal-checkbox" type="radio" name="checkbox" value="normal-checkbox">
-                <label for="normal-checkbox">Normal Mode</label>
-            </span>
-            <span class="ai-select">
-                <input id="ai-checkbox" type="radio" name="checkbox" value="ai-checkbox" checked>
-                <label for="ai-checkbox">AI Mode</label>
-            </span>
-        </form>
         <!-- Sound JS library -->
         <script src="howler.js"></script>
         <!-- Game Script -->

@@ -3,7 +3,12 @@
 body {
   background-color: #fcbb7e;
   margin: 0;
+  text-align: center;
   user-select: none;
+}
+
+.content-wrapper{
+  height: 100vh;
 }
 
 input{
@@ -15,7 +20,6 @@ input{
   font-size: 6rem;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  text-align: center;
   margin: 0;
 }
 
@@ -24,7 +28,6 @@ input{
   font-size: 3rem;
   font-family: 'Cormorant Unicase', serif;
   font-weight: 400;
-  text-align: center;
   transition-property: color;
   transition-duration: 500ms;
   transition-timing-function: ease-in;
@@ -42,7 +45,6 @@ input{
 }
 
 .mode-selector{
-  text-align: center;
   margin: 2.5%;
 }
 
@@ -65,7 +67,6 @@ input{
 }
 
 .scores {
-  text-align: center;
   font-family: 'Roboto Slab', serif;
   margin: 1.5% 0;
   font-weight: 400;
@@ -82,11 +83,15 @@ input{
   margin: 0 3%;
 }
 
+.content-wrapper, .board-wrapper{
+  display: grid;
+  place-items: center;
+}
+
 .board {
   border-radius: 5px;
   height: 18rem;
   width: 18rem;
-  margin: auto;
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 3fr) minmax(0, 3fr);
   grid-auto-rows: 33.33%;
