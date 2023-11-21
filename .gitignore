@@ -1,0 +1,7 @@
+wasm/minimax-algo-lib/target
+
+server/__pycache__
+server/venv-win
+
+www/node_modules
+www/.vscode

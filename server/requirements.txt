@@ -1,0 +1,4 @@
+eventlet
+python-socketio
+cryptography
+pyjwt
