@@ -4,19 +4,20 @@ A simple multiplayer tic-tac-toe web application (Typescript + Vue3) with Python
 
 
 ## Installation
-`git clone <repo> -b multiplayer`
-`cd <repo-dir>`
+- `git clone <repo> -b multiplayer`
+- `cd <repo-dir>`
 
 ### Setup (Server)
-`cd server`
-`pip install -r <path-to-requirements>`
-`python main.py`
+- `cd server`
+- `pip install -r <path-to-requirements>`
+- `python main.py`
 
 ### Setup (Client)
-`cd www`
-`npm install`
-`npm run dev`
+- `cd www`
+- `npm install`
+- `npm run dev`
 
 ## Requirements
-NodeJS v20.6.0
-Python 3.10.2
+
+- NodeJS v20.6.0
+- Python 3.10.2
