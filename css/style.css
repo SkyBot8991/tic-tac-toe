@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Oswald:wght@300;400;500&family=Cormorant+Unicase:wght@300;500&display=swap'); 
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fcbb7e;
-  margin: 0;
   text-align: center;
   user-select: none;
 }
@@ -20,7 +25,6 @@ input{
   font-size: 6rem;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  margin: 0;
 }
 
 .sub-heading {
@@ -31,7 +35,6 @@ input{
   transition-property: color;
   transition-duration: 500ms;
   transition-timing-function: ease-in;
-  margin: 0;
 }
 
 .sub-heading-X-win {
@@ -48,22 +51,20 @@ input{
   margin: 2.5%;
 }
 
-.normal-select {
+.normal-select, .ai-select{
   display: inline-block;
-  color: #c02a1f;
   font-size: 1.5rem;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   margin: 0 1%;
 }
 
-.ai-select {
-  display: inline-block;
+.normal-select {
   color: #fc7130;
-  font-size: 1.5rem;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-  margin: 0 1%;
+}
+
+.ai-select {
+  color: #c02a1f;
 }
 
 .scores {
@@ -95,7 +96,11 @@ input{
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 3fr) minmax(0, 3fr);
   grid-auto-rows: 33.33%;
-  grid-auto-columns: 33.33%;
+}
+
+.center{
+  display: grid;
+  place-items: center;
 }
 
 .grid-item {
@@ -104,7 +109,6 @@ input{
   background-color: #fc7130;
   color: #c02a1f;
   cursor: pointer;
-  padding-top: 8%;
   text-align: center;
   font-size: 3rem;
   font-family: 'Oswald', sans-serif;
@@ -120,38 +124,6 @@ input{
 
 .grid-win {
   color: #ffc996;
-}
-
-.grid-1 {
-}
-
-.grid-2 {
-
-}
-
-.grid-3 {
-}
-
-.grid-4 {
-
-}
-
-.grid-5 {
-
-}
-
-.grid-6 {
-
-}
-
-.grid-7 {
-}
-
-.grid-8 {
-  
-}
-
-.grid-9 {
 }
 
 @media(max-width: 600px){

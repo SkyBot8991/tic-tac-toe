@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tic-Tac-Toe | Jimson</title>
+        <title>Tic-Tac-Toe</title>
     </head>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Font Awesome -->
@@ -14,34 +14,34 @@
         <div class="content-wrapper">
             <div class="content">
                 <h1 class="main-heading">Tic-Tac-Toe</h1>
-                <h3 class="sub-heading">Player 1's Turn</h2>
+                <h3 class="sub-heading">Player 1's Turn</h3>
+                <form class="mode-selector">
+                    <span class="normal-select">
+                        <input id="normal-checkbox" type="radio" name="checkbox" value="normal-checkbox" autocomplete="off">
+                        <label for="normal-checkbox">Normal Mode</label>
+                    </span>
+                    <span class="ai-select">
+                        <input id="ai-checkbox" type="radio" name="checkbox" value="ai-checkbox" autocomplete="off">
+                        <label for="ai-checkbox">AI Mode</label>
+                    </span>
+                </form>
+                <div class="board-wrapper">
+                    <div class="board">
+                        <div class="grid-item grid-1 center"></div>
+                        <div class="grid-item grid-2 center"></div>
+                        <div class="grid-item grid-3 center"></div>
+                        <div class="grid-item grid-4 center"></div>
+                        <div class="grid-item grid-5 center"></div>
+                        <div class="grid-item grid-6 center"></div>
+                        <div class="grid-item grid-7 center"></div>
+                        <div class="grid-item grid-8 center"></div>
+                        <div class="grid-item grid-9 center"></div>
+                    </div>
+                </div>
                 <div class="scores">
                     <span class="player-1-score">X - 0</span>
                     <span class="player-2-score">O - 0</span>
                 </div>
-                <div class="board-wrapper">
-                    <div class="board">
-                        <div class="grid-item grid-1"></div>
-                        <div class="grid-item grid-2"></div>
-                        <div class="grid-item grid-3"></div>
-                        <div class="grid-item grid-4"></div>
-                        <div class="grid-item grid-5"></div>
-                        <div class="grid-item grid-6"></div>
-                        <div class="grid-item grid-7"></div>
-                        <div class="grid-item grid-8"></div>
-                        <div class="grid-item grid-9"></div>
-                    </div>
-                </div>
-                <form class="mode-selector">
-                    <span class="normal-select">
-                        <input id="normal-checkbox" type="radio" name="checkbox" value="normal-checkbox">
-                        <label for="normal-checkbox">Normal Mode</label>
-                    </span>
-                    <span class="ai-select">
-                        <input id="ai-checkbox" type="radio" name="checkbox" value="ai-checkbox" checked>
-                        <label for="ai-checkbox">AI Mode</label>
-                    </span>
-                </form>
             </div>
         </div>
         <!-- Sound JS library -->
