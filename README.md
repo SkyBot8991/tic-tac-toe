@@ -4,7 +4,7 @@ A simple multiplayer tic-tac-toe web application (Typescript + Vue3) with Python
 
 ## Demo
 <video controls>
-  <source src="demo.mp4" type="video/mp4">
+  <source src="https://github.com/user-attachments/assets/df3b012c-19d5-4cb9-a4fe-9b115d2bc156" type="video/mp4">
 </video>
 
 ## Installation
